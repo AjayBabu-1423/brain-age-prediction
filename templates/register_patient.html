@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NeuroAge | Patient Registration</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../static/assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;"></div>
+</div>
+
+<!-- Topbar -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-start">
+            <a class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>NeuroAge Center</a>
+            <a class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+91 98765 43210</a>
+            <a class="text-light"><i class="fas fa-envelope text-primary me-2"></i>support@neuroage.com</a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3">
+        <a href="/" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fas fa-brain me-3"></i>NeuroAge</h1>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="/admin_login" class="nav-item nav-link">Admin</a>
+                <a href="/patient_login" class="nav-item nav-link active">Patient</a>
+                <a href="/doctor_login" class="nav-item nav-link">Doctor</a>
+            </div>
+            <a href="/patient_login" class="btn btn-primary rounded-pill text-white py-2 px-4">Login</a>
+        </div>
+    </nav>
+</div>
+
+<!-- Patient Registration Section -->
+<div class="container-fluid appointment py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+
+            <!-- Left Content -->
+            <div class="col-lg-6 wow fadeInLeft">
+                <div class="section-title text-start">
+                    <h4 class="sub-title pe-3 mb-0">Patient Portal</h4>
+                    <h1 class="display-4 mb-4">Patient Registration</h1>
+                    <p>
+                        Register to access doctors, appointments, medical records,
+                        and personalized healthcare services securely.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Form Card -->
+<!-- Right Form Card (SMALL + SIDE BY SIDE) -->
+<div class="col-lg-5 wow fadeInRight">
+    <div class="appointment-form rounded p-4">
+        <p class="fs-5 text-uppercase text-primary">New Patient</p>
+        <h2 class="mb-4 text-dark">Create Account</h2>
+
+        <form method="POST">
+            <div class="row gy-3 gx-3">
+
+                <div class="col-md-6">
+                    <label>Name</label>
+                    <input type="text" name="name"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Mobile</label>
+                    <input type="text" name="mobile"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Email</label>
+                    <input type="email" name="email"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Age</label>
+                    <input type="number" name="age"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Location</label>
+                    <input type="text" name="location"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Gender</label>
+                    <select name="gender"
+                            class="form-control py-2 border-primary bg-transparent" required>
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Username</label>
+                    <input type="text" name="username"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label>Password</label>
+                    <input type="password" name="password"
+                           class="form-control py-2 border-primary bg-transparent" required>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <button class="btn btn-primary w-100 py-2">
+                        <i class="fas fa-user-plus me-2"></i> Register
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid footer py-5 wow fadeIn">
+    <div class="container py-5 text-center text-white">
+        <p>© NeuroAge Healthcare System. All Rights Reserved.</p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../static/assets/lib/wow/wow.min.js"></script>
+<script src="../static/assets/js/main.js"></script>
+
+</body>
+</html>
