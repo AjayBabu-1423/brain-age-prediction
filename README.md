@@ -104,4 +104,4 @@ http://127.0.0.1:5000
 ## 👨‍💻 Author
 
 Brain Age Prediction Project
-Developed using Machine Learning and Medical Imaging.
+Developed using Machine Learning and Medical Imaging. by Ajay Babu
