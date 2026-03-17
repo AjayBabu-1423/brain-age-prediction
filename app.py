@@ -28,13 +28,7 @@ app = Flask(__name__)
 app.secret_key = "brain_age_secret"
 
 # ---------------- MySQL ----------------
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="brain_age_db",
-    charset="utf8"
-)
+
 db = None
 # ---------------- Routes ----------------
 @app.route("/")
