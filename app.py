@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, session, send_file, url_for
+import mysql.connector
 import os, numpy as np, torch, torch.nn as nn, torch.nn.functional as F, nibabel as nib
 from datetime import datetime
 import pdfkit
@@ -34,7 +35,7 @@ db = mysql.connector.connect(
     database="brain_age_db",
     charset="utf8"
 )
-
+db = None
 # ---------------- Routes ----------------
 @app.route("/")
 def index():
