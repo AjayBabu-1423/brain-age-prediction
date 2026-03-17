@@ -7,3 +7,6 @@ nibabel
 pdfkit
 mysql-connector-python
 matplotlib
+captum
+opencv-python
+reportlab
