@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, session, send_file, url_for
-import mysql.connector
 import os, numpy as np, torch, torch.nn as nn, torch.nn.functional as F, nibabel as nib
 from datetime import datetime
 import pdfkit
