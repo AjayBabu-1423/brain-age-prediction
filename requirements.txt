@@ -6,3 +6,4 @@ torch
 nibabel
 pdfkit
 mysql-connector-python
+matplotlib
