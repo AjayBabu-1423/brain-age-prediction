@@ -5,4 +5,4 @@ scikit-learn
 torch
 nibabel
 pdfkit
-xyz
+mysql-connector-python
